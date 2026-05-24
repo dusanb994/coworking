@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontaktirajte Hub Coworking — zakažite obilazak ili nas posetite u YU Biznis Centru, Bulevar Mihajla Pupina 10ž, Novi Beograd.">
+  <title>Kontakt — Hub Coworking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">Hub <span>Coworking</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Početna</a>
+        <a href="cenovnik.html">Cenovnik</a>
+        <a href="o-nama.html">O nama</a>
+        <a href="kontakt.html" class="active">Kontakt</a>
+      </nav>
+      <a href="kontakt.html" class="btn btn-primary nav-cta">Zakaži obilazak</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Otvori meni">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Početna</a>
+    <a href="cenovnik.html">Cenovnik</a>
+    <a href="o-nama.html">O nama</a>
+    <a href="kontakt.html" class="active">Kontakt</a>
+    <a href="kontakt.html" class="btn btn-primary">Zakaži obilazak</a>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <span class="section-label">Kontakt</span>
+        <h1>Javite nam se — tu smo za vas</h1>
+        <p>Imate pitanje, želite obilazak ili ste spremni da postanete član? Popunite formu ili nas kontaktirajte direktno.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="form reveal" id="contactFormWrapper">
+          <div class="form-body" id="formBody">
+            <h3 style="margin-bottom: 1.5rem;">Pošaljite nam poruku</h3>
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Ime i prezime *</label>
+                <input type="text" id="name" name="name" placeholder="Vaše ime" required>
+                <span class="form-error">Molimo unesite ime i prezime.</span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="vas@email.com" required>
+                <span class="form-error">Molimo unesite ispravnu email adresu.</span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone" placeholder="+381 6X XXX XXXX">
+              </div>
+              <div class="form-group">
+                <label for="interest">Zanima me... *</label>
+                <select id="interest" name="interest" required>
+                  <option value="">Izaberite opciju</option>
+                  <option value="fiksno">Fiksno radno mesto</option>
+                  <option value="klizno">Klizno radno mesto</option>
+                  <option value="dnevni">Dnevni pristup</option>
+                  <option value="obilazak">Obilazak prostora</option>
+                  <option value="ostalo">Ostalo</option>
+                </select>
+                <span class="form-error">Molimo izaberite opciju.</span>
+              </div>
+              <div class="form-group">
+                <label for="message">Poruka *</label>
+                <textarea id="message" name="message" placeholder="Vaša poruka..." required></textarea>
+                <span class="form-error">Molimo unesite poruku.</span>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Pošalji poruku</button>
+            </form>
+          </div>
+          <div class="form-success" id="formSuccess">
+            <div class="form-success-icon">✓</div>
+            <h3>Hvala na poruci!</h3>
+            <p>Javićemo vam se u roku od 24 sata. Vidimo se uskoro u Hub Coworking-u!</p>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="contact-info-card">
+            <h3 style="margin-bottom: 0.5rem;">Kontakt informacije</h3>
+            <p style="margin-bottom: 1.5rem;">Posetite nas u kompleksu YU Biznis Centar ili nas kontaktirajte direktno.</p>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div>
+                <h4>Adresa</h4>
+                <p>Bulevar Mihajla Pupina 10ž<br>YU Biznis Centar<br>11070 Novi Beograd</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">✉️</div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:info@hubcoworking.rs">info@hubcoworking.rs</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📞</div>
+              <div>
+                <h4>Telefon</h4>
+                <p><a href="tel:+381111234567">+381 11 123 4567</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🕐</div>
+              <div>
+                <h4>Radno vreme</h4>
+                <p>Ponedeljak – Petak: 08:00 – 20:00<br>Subota: 10:00 – 16:00<br>Nedelja: zatvoreno</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="map-container reveal">
+          <iframe
+            src="https://maps.google.com/maps?q=Bulevar+Mihajla+Pupina+10%C5%BE,+Novi+Beograd&output=embed"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Lokacija Hub Coworking na mapi">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Hub <span>Coworking</span></a>
+          <p>Moderan coworking prostor u YU Biznis Centru, Novi Beograd. Radite produktivno, povezujte se sa zajednicom.</p>
+        </div>
+        <div>
+          <h4>Navigacija</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="cenovnik.html">Cenovnik</a></li>
+            <li><a href="o-nama.html">O nama</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul class="footer-contact">
+            <li>Bulevar Mihajla Pupina 10ž, YU Biznis Centar</li>
+            <li>info@hubcoworking.rs</li>
+            <li>+381 11 123 4567</li>
+            <li>Pon–Pet: 08:00–20:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hub Coworking. Sva prava zadržana.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">LI</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
