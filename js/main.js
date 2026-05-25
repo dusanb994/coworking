@@ -66,10 +66,13 @@
     });
   }
 
-  /* --- Contact Form Validation --- */
+  /* --- Contact Form Validation & Submit --- */
   const contactForm = document.getElementById('contactForm');
   const formBody = document.getElementById('formBody');
   const formSuccess = document.getElementById('formSuccess');
+  const formSubmitError = document.getElementById('formSubmitError');
+  const formSubmitBtn = document.getElementById('formSubmitBtn');
+  const submitBtnDefaultText = formSubmitBtn ? formSubmitBtn.textContent : 'Pošalji poruku';
 
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
@@ -101,10 +104,47 @@
         }
       });
 
-      if (isValid && formBody && formSuccess) {
-        formBody.classList.add('hidden');
-        formSuccess.classList.add('visible');
+      if (!isValid || !formBody || !formSuccess) return;
+
+      if (formSubmitError) {
+        formSubmitError.textContent = '';
+        formSubmitError.classList.remove('visible');
       }
+
+      if (formSubmitBtn) {
+        formSubmitBtn.disabled = true;
+        formSubmitBtn.textContent = 'Slanje...';
+      }
+
+      fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { Accept: 'application/json' }
+      })
+        .then(function (response) {
+          if (response.ok) {
+            contactForm.reset();
+            formBody.classList.add('hidden');
+            formSuccess.classList.add('visible');
+            return;
+          }
+
+          return response.json().then(function (data) {
+            throw new Error(data.error || 'Slanje nije uspelo.');
+          });
+        })
+        .catch(function () {
+          if (formSubmitError) {
+            formSubmitError.textContent = 'Poruka nije poslata. Pokušajte ponovo ili nas kontaktirajte na coworkingyubc@gmail.com.';
+            formSubmitError.classList.add('visible');
+          }
+        })
+        .finally(function () {
+          if (formSubmitBtn) {
+            formSubmitBtn.disabled = false;
+            formSubmitBtn.textContent = submitBtnDefaultText;
+          }
+        });
     });
 
     contactForm.querySelectorAll('[required]').forEach(function (field) {

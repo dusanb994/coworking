@@ -1,4 +1,4 @@
-# Hub Coworking
+# Yubiz Coworking
 
 Statički sajt za coworking space — čist HTML, CSS i JavaScript, bez frameworka i build alata.
 
@@ -7,7 +7,7 @@ Statički sajt za coworking space — čist HTML, CSS i JavaScript, bez framewor
 | Stranica | Fajl | Opis |
 |----------|------|------|
 | Početna | `index.html` | Hero, uvod, sadržaji, galerija, preview cenovnika |
-| Cenovnik | `cenovnik.html` | 3 paketa + tabela poređenja |
+| Cenovnik | `cenovnik.html` | 2 paketa + tabela poređenja |
 | O nama | `o-nama.html` | Priča, vrednosti, prostor, statistike |
 | Kontakt | `kontakt.html` | Kontakt forma, info, mapa |
 
@@ -45,17 +45,16 @@ coworking/
 
 Zamenite placeholder podatke u svakom HTML fajlu:
 
-- **Ime:** Hub Coworking
-- **Adresa:** Bulevar Mihajla Pupina 10ž, YU Biznis Centar, Novi Beograd
-- **Email:** info@hubcoworking.rs
-- **Telefon:** +381 11 123 4567
+- **Ime:** Yubiz Coworking
+- **Lokacija:** YU Biznis Centar, Novi Beograd
+- **Email:** coworkingyubc@gmail.com
+- **Telefon:** +381 66 073 827
 
 ### Cene
 
 Cene se nalaze u `cenovnik.html` i `index.html` (pricing preview sekcija):
 
 - Fiksno radno mesto: 250€/mesec
-- Klizno radno mesto: 200€/mesec
 - Dnevni pristup: 15€/dan
 
 ### Slike

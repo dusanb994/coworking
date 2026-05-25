@@ -3,8 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kontaktirajte Hub Coworking — zakažite obilazak ili nas posetite u YU Biznis Centru, Bulevar Mihajla Pupina 10ž, Novi Beograd.">
-  <title>Kontakt — Hub Coworking</title>
+  <meta name="description" content="Kontaktirajte Yubiz Coworking — zakažite obilazak ili nas posetite u YU Biznis Centru, Novi Beograd.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Yubiz Coworking">
+  <meta property="og:locale" content="sr_RS">
+  <meta property="og:title" content="Kontakt — Yubiz Coworking">
+  <meta property="og:description" content="Zakažite obilazak ili nas kontaktirajte. Yubiz Coworking, YU Biznis Centar, Novi Beograd.">
+  <meta property="og:url" content="https://dusanb994.github.io/coworking/kontakt.html">
+  <meta property="og:image" content="https://dusanb994.github.io/coworking/assets/images/open-space-3.png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="682">
+  <meta property="og:image:alt" content="Open space u Yubiz Coworking prostoru, Novi Beograd">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kontakt — Yubiz Coworking">
+  <meta name="twitter:description" content="Zakažite obilazak prostora u YU Biznis Centru, Novi Beograd.">
+  <meta name="twitter:image" content="https://dusanb994.github.io/coworking/assets/images/open-space-3.png">
+  <title>Kontakt — Yubiz Coworking</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
@@ -14,7 +29,7 @@
 
   <header class="header" id="header">
     <div class="container nav">
-      <a href="index.html" class="logo">Hub <span>Coworking</span></a>
+      <a href="index.html" class="logo">Yubiz <span>Coworking</span></a>
       <nav class="nav-links">
         <a href="index.html">Početna</a>
         <a href="cenovnik.html">Cenovnik</a>
@@ -52,7 +67,8 @@
         <div class="form reveal" id="contactFormWrapper">
           <div class="form-body" id="formBody">
             <h3 style="margin-bottom: 1.5rem;">Pošaljite nam poruku</h3>
-            <form id="contactForm" novalidate>
+            <form id="contactForm" action="https://formspree.io/f/xdajlvgb" method="POST" novalidate>
+              <input type="hidden" name="_subject" value="Nova poruka — Yubiz Coworking">
               <div class="form-group">
                 <label for="name">Ime i prezime *</label>
                 <input type="text" id="name" name="name" placeholder="Vaše ime" required>
@@ -72,7 +88,6 @@
                 <select id="interest" name="interest" required>
                   <option value="">Izaberite opciju</option>
                   <option value="fiksno">Fiksno radno mesto</option>
-                  <option value="klizno">Klizno radno mesto</option>
                   <option value="dnevni">Dnevni pristup</option>
                   <option value="obilazak">Obilazak prostora</option>
                   <option value="ostalo">Ostalo</option>
@@ -84,13 +99,14 @@
                 <textarea id="message" name="message" placeholder="Vaša poruka..." required></textarea>
                 <span class="form-error">Molimo unesite poruku.</span>
               </div>
-              <button type="submit" class="btn btn-primary" style="width: 100%;">Pošalji poruku</button>
+              <p class="form-submit-error" id="formSubmitError" role="alert"></p>
+              <button type="submit" class="btn btn-primary" id="formSubmitBtn" style="width: 100%;">Pošalji poruku</button>
             </form>
           </div>
           <div class="form-success" id="formSuccess">
             <div class="form-success-icon">✓</div>
             <h3>Hvala na poruci!</h3>
-            <p>Javićemo vam se u roku od 24 sata. Vidimo se uskoro u Hub Coworking-u!</p>
+            <p>Javićemo vam se u roku od 24 sata. Vidimo se uskoro u Yubiz Coworking-u!</p>
           </div>
         </div>
 
@@ -103,28 +119,28 @@
               <div class="contact-info-icon">📍</div>
               <div>
                 <h4>Adresa</h4>
-                <p>Bulevar Mihajla Pupina 10ž<br>YU Biznis Centar<br>11070 Novi Beograd</p>
+                <p>YU Biznis Centar<br>Novi Beograd</p>
               </div>
             </div>
             <div class="contact-info-item">
               <div class="contact-info-icon">✉️</div>
               <div>
                 <h4>Email</h4>
-                <p><a href="mailto:info@hubcoworking.rs">info@hubcoworking.rs</a></p>
+                <p><a href="mailto:coworkingyubc@gmail.com">coworkingyubc@gmail.com</a></p>
               </div>
             </div>
             <div class="contact-info-item">
               <div class="contact-info-icon">📞</div>
               <div>
                 <h4>Telefon</h4>
-                <p><a href="tel:+381111234567">+381 11 123 4567</a></p>
+                <p><a href="tel:+38166073827">+381 66 073 827</a></p>
               </div>
             </div>
             <div class="contact-info-item">
               <div class="contact-info-icon">🕐</div>
               <div>
                 <h4>Radno vreme</h4>
-                <p>Ponedeljak – Petak: 08:00 – 20:00<br>Subota: 10:00 – 16:00<br>Nedelja: zatvoreno</p>
+                <p>Otvoreno 24 sata dnevno, 7 dana u nedelji</p>
               </div>
             </div>
           </div>
@@ -134,11 +150,11 @@
       <div class="container">
         <div class="map-container reveal">
           <iframe
-            src="https://maps.google.com/maps?q=Bulevar+Mihajla+Pupina+10%C5%BE,+Novi+Beograd&output=embed"
+            src="https://maps.google.com/maps?q=YU+Biznis+Centar,+Novi+Beograd&output=embed"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="Lokacija Hub Coworking na mapi">
+            title="Lokacija Yubiz Coworking na mapi">
           </iframe>
         </div>
       </div>
@@ -149,7 +165,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo">Hub <span>Coworking</span></a>
+          <a href="index.html" class="logo">Yubiz <span>Coworking</span></a>
           <p>Moderan coworking prostor u YU Biznis Centru, Novi Beograd. Radite produktivno, povezujte se sa zajednicom.</p>
         </div>
         <div>
@@ -164,19 +180,24 @@
         <div>
           <h4>Kontakt</h4>
           <ul class="footer-contact">
-            <li>Bulevar Mihajla Pupina 10ž, YU Biznis Centar</li>
-            <li>info@hubcoworking.rs</li>
-            <li>+381 11 123 4567</li>
-            <li>Pon–Pet: 08:00–20:00</li>
+            <li>YU Biznis Centar, Novi Beograd</li>
+            <li>coworkingyubc@gmail.com</li>
+            <li>+381 66 073 827</li>
+            <li>Radno vreme: 24/7</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Hub Coworking. Sva prava zadržana.</p>
+        <p>&copy; 2026 Yubiz Coworking. Sva prava zadržana.</p>
         <div class="footer-social">
-          <a href="#" aria-label="Instagram">IG</a>
-          <a href="#" aria-label="LinkedIn">LI</a>
-          <a href="#" aria-label="Facebook">FB</a>
+          <a href="https://www.instagram.com/coworking.co.rs/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+          <a href="https://www.linkedin.com/in/coworking-space-a83605411/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
         </div>
       </div>
     </div>
